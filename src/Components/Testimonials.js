@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ParticlesBg from 'particles-bg'
 class Testimonials extends Component {
   render() {
 
@@ -16,6 +16,7 @@ class Testimonials extends Component {
 
     return (
       <section id="testimonials">
+
       <div className="text-container">
          <div className="row">
 

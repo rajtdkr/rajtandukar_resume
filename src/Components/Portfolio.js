@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ParticlesBg from "particles-bg";
 
 class Portfolio extends Component {
   render() {
@@ -24,6 +25,7 @@ class Portfolio extends Component {
     }
 
     return (
+
       <section id="portfolio">
 
       <div className="row">

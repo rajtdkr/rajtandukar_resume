@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MouseParticles from 'react-mouse-particles'
+import ParticlesBg from 'particles-bg'
 import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';
@@ -46,6 +48,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <MouseParticles g={1} color="random" cull="col,image-wrapper"/>
+
         <Header data={this.state.resumeData.main}/>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
