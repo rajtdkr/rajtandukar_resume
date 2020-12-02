@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MouseParticles from 'react-mouse-particles'
-import ParticlesBg from 'particles-bg'
 import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';

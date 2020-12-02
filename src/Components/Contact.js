@@ -29,7 +29,7 @@ class Contact extends Component {
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
-      var email = this.props.data.email;
+      //var email = this.props.data.email;
       var message = this.props.data.contactmessage;
     }
 
@@ -113,14 +113,14 @@ class Contact extends Component {
                         You can Put your text here
                         <a href="http://youtube.com"> http://google.com</a>
                         </span>
-                        <b><a href="#">2 Days Ago</a></b>
+                        <b><a href="http://youtube.com">2 Days Ago</a></b>
                      </li>
                      <li>
                         <span>
                         Another Text
-                        <a href="#">http://google.com</a>
+                        <a href="http://youtube.com">http://google.com</a>
                         </span>
-                        <b><a href="#">3 Days Ago</a></b>
+                        <b><a href="http://youtube.com">3 Days Ago</a></b>
                      </li>
                   </ul>
 		         </div>

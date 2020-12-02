@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ParticlesBg from 'particles-bg'
 class Testimonials extends Component {
   render() {
 
