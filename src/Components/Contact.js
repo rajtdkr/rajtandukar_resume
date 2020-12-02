@@ -1,6 +1,25 @@
 import React, { Component } from 'react';
 
 class Contact extends Component {
+
+    constructor(props) {
+        super(props);
+    this.state = {
+          contactName: "",
+          contactEmail: "",
+          contactMessage : "",
+        };
+      }
+    handleInputChange(event) {
+        event.preventDefault();
+        const target = event.target;
+        const name = target.name;
+        const value = target.value;
+    this.setState({ [name]: value });
+      }
+
+
+
   render() {
 
     if(this.props.data){
@@ -34,7 +53,7 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form action="{this.sendMessage.bind(this)}" method="post" id="contactForm" name="contactForm" >
 					<fieldset>
 
                   <div>
@@ -59,6 +78,7 @@ class Contact extends Component {
 
                   <div>
                      <button className="submit">Submit</button>
+
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />
                      </span>
@@ -91,14 +111,14 @@ class Contact extends Component {
                      <li>
                         <span>
                         You can Put your text here
-                        <a href="http://youtube.com"> http://youtube.com</a>
+                        <a href="http://youtube.com"> http://google.com</a>
                         </span>
                         <b><a href="#">2 Days Ago</a></b>
                      </li>
                      <li>
                         <span>
-                        Another TExt
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        Another Text
+                        <a href="#">http://google.com</a>
                         </span>
                         <b><a href="#">3 Days Ago</a></b>
                      </li>
