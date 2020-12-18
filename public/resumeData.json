@@ -4,7 +4,7 @@
     "occupation":"Data Scientist",
     "description":"A Personal Message to a potential employer",
     "image":"profilepic.jpg",
-    "bio":"A sHORT bIO ABOUT MYSELF.",
+    "bio":"A Recent graduate from University of Western Australia, with a degree in Masters of Data Science. With a year of industrial experience in the field.",
     "contactmessage":"A CONTACT MESSAGE",
     "email": "rajtdkr@gmail.com",
     "phone": "0401546772",
@@ -66,6 +66,12 @@
         "title":"Android Developer",
         "years":"March 2007 - February 2010",
         "description":"Developed a project for government of Southern Railways, India included website and android application with a team of 10 being presently operated by inspectors of India tracking over 5000 locos and co-locos in over 15 districts of Tamilnadu, India."
+      },
+      {
+        "company":"Plazma-tech Pvt Ltd",
+        "title":"Android Developer",
+        "years":"Dec 2017 - Jan 2018",
+        "description":"Constructed an android application for proper Flight Data Management, currently in use by 80% Domestic Airlines of Nepal."
       }
     ],
     "skills":[
@@ -73,13 +79,22 @@
         "name":"Python",
         "level":"80%"
       },
+
       {
-        "name":"Git",
-        "level":"60%"
+        "name":"SQL",
+        "level":"80%"
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
+        "name":"Git",
+        "level":"70%"
+      },
+      {
+        "name":"R",
+        "level":"75%"
+      },
+      {
+        "name":"Cloud Computing",
+        "level":"60%"
       },
       {
         "name":"ReactJs",
@@ -87,19 +102,7 @@
       },
       {
         "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%"
-      },
-      {
-        "name":"R",
-        "level":"50%"
-      },
-      {
-        "name":"SQL",
-        "level":"80%"
+        "level":"20%"
       }
     ]
   },
@@ -108,25 +111,25 @@
       {
         "title":"Essay Marking Assistant",
         "category":"Natural Language Processing",
-        "image":"canadian-wanderlust.jpg",
+        "image":"EMA.png",
         "url":"https://github.com/rajtdkr/Essay-Marking-Assistant"
       },
       {
         "title":"Automatic Answer Evaluation",
-        "category":"(offline now) Natural Language Processing",
-        "image":"fury-fighting-gear.jpg",
+        "category":"Natural Language Processing",
+        "image":"AAE.png",
         "url":"http://www.google.com"
       },
       {
         "title":"Virtual Book",
         "category":"Mobile Application",
-        "image":"original-thai-food.jpg",
+        "image":"VB.png",
         "url":"http://www.google.com"
       },
       {
         "title":"Mr. Braniac",
         "category":"Mobile Quiz",
-        "image":"resume-website.jpg",
+        "image":"Mr Braniac.jpg",
         "url":"http://www.google.com"
       }
     ]
@@ -134,12 +137,19 @@
   "testimonials":{
     "testimonials":[
       {
-        "text":"Volunterring Stuffs here?",
-        "user":""
+        "text":"Volunteering"
       },
       {
-        "text":"Some More Stuffs here",
-        "user":""
+        "text":"Uni-Mentor",
+        "user":"University of Western Australia , Perth, WA / 2020"
+      },
+      {
+        "text":"Rotaract Club of Perth",
+        "user":"Member, Perth, WA / 2020"
+      },
+      {
+        "text":"Rotaract Club of Himalayan Patan",
+        "user":"Member, Lalitpur, Nepal / 2018"
       }
     ]
   }
