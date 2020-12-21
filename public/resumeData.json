@@ -2,12 +2,13 @@
   "main": {
     "name":"Raj Tandukar",
     "occupation":"Data Scientist",
-    "description":"A Personal Message to a potential employer",
+    "description":"and a recent graduate from University of Western Australia",
     "image":"profilepic.jpg",
-    "bio":"A Recent graduate from University of Western Australia, with a degree in Masters of Data Science. With a year of industrial experience in the field.",
+    "bio":"Using data to shape future decisions has always been a passion. I mainly work with Natural Language Processing and Image processing, however enjoy working with data in general. With a bit of background in software engineering, I always loved programming my ideas to real life.   I sometimes love to sing, and play my guitar :).",
+
     "contactmessage":"A CONTACT MESSAGE",
     "email": "rajtdkr@gmail.com",
-    "phone": "0401546772",
+    "phone": "",
     "address":{
       "street":"Light Street",
       "city":"Perth",
