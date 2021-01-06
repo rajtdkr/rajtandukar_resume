@@ -19,7 +19,6 @@ class Contact extends Component {
       }
 
 
-
   render() {
 
     if(this.props.data){
@@ -43,7 +42,7 @@ class Contact extends Component {
          </div>
 
          <div className="row">
-            <div className="eight columns">
+            <div className="twelve columns">
 
                <form action="{this.sendMessage.bind(this)}" method="post" id="contactForm" name="contactForm" >
 					<fieldset>

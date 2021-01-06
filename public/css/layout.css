@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/mountains.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -207,9 +207,9 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+   width: 200px;
+   height: 200px;
+   border-radius: 75%;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -645,7 +645,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   background: #1F1F1F url(../images/mountains.jpg) no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
@@ -670,7 +670,7 @@ call-to-action .button {
 #testimonials .header-col h1:before {
    font-family: 'FontAwesome';
    content: "\f10d";
-	padding-right: 10px;
+    padding-right: 10px;
 	font-size: 72px;
    line-height: 72px;
    text-align: left;
@@ -815,7 +815,7 @@ call-to-action .button {
 #contact h1:before {
    font-family: 'FontAwesome';
    content: "\f0e0";
-	padding-right: 10px;
+	padding-right: 0px;
 	font-size: 72px;
    line-height: 72px;
    text-align: left;
@@ -852,10 +852,10 @@ call-to-action .button {
 	color: #eee;
 	background: #373233;
 	margin-bottom: 42px;
-	border: 0;
+	border: 1;
 	outline: none;
    font-size: 15px;
-   line-height: 24px;
+   line-height: 1px;
    width: 65%;
 }
 #contact input:focus,
@@ -906,24 +906,6 @@ call-to-action .button {
    top: 17px;
 }
 
-
-/* Twitter Feed */
-#twitter {
-   margin-top: 12px;
-   padding: 0;
-}
-#twitter li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
-}
-#twitter li span {
-   display: block;
-}
-#twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
-   color: #474747 !important;
-   border: none;
-}
 
 
 /* ------------------------------------------------------------------ */
