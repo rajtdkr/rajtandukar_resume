@@ -43,10 +43,8 @@ class Contact extends Component {
 
          <div className="row">
             <div className="twelve columns">
-
                <form action="{this.sendMessage.bind(this)}" method="post" id="contactForm" name="contactForm" >
 					<fieldset>
-
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
 						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
