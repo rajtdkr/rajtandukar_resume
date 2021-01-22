@@ -113,25 +113,29 @@
         "title":"Essay Marking Assistant",
         "category":"Natural Language Processing",
         "image":"EMA.png",
-        "url":"https://github.com/rajtdkr/Essay-Marking-Assistant"
+        "url":"https://github.com/rajtdkr/Essay-Marking-Assistant",
+        "description" : "Automated Essay Scoring (AES) or Automated Essay Grading (AEG) refers to a challenging Natural Language Processing task (NLP) which involves evaluation of descriptive answer scripts to provide a legitimate human equivalent result. "
       },
       {
         "title":"Automatic Answer Evaluation",
         "category":"Natural Language Processing",
         "image":"AAE.png",
-        "url":"http://www.google.com"
+        "url":"http://www.google.com",
+        "description" : "Conducted and published a research project with a team of five, to develop an intelligent system to  evaluate descriptive answers. The technical expertise of Natural Language Processing and Deep Learning  were exploited in this project. "
       },
       {
         "title":"Virtual Book",
         "category":"Mobile Application",
         "image":"VB.png",
-        "url":"http://www.google.com"
+        "url":"http://www.google.com",
+        "description" : " Acquired first place developing “Virtual Book”, a Cross-Platform application with Unity coded in C# and  Vuforia database as back-end. The concept behind the development of this application is for users to get  a clear understanding of what writer is trying to imply. This application detects image of writer’s content  and plays a video above it. \n"
       },
       {
         "title":"Mr. Braniac",
         "category":"Mobile Quiz",
         "image":"Mr Braniac.jpg",
-        "url":"http://www.google.com"
+        "url":"http://www.google.com",
+        "description" : "Android Application developed for training and checking aptitude of a student, based on the current job  market. \n"
       }
     ]
   },
