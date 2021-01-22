@@ -7,7 +7,7 @@ class Extras extends Component {
         return  <li key={Extras.user}>
             <blockquote>
                <p>{Extras.text}</p>
-               <cite>{Extras.user}</cite>
+                <h6 style={{color : "#ffffff"}}>{Extras.user}</h6>
             </blockquote>
          </li>
       })
