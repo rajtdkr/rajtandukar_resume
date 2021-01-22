@@ -5,7 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "antd": "^4.10.2",
-    "eslint": "^7.17.0",
+    "emailjs-com": "^2.6.4",
     "jquery": "^3.2.1",
     "particles-bg": "^2.5.0",
     "react": "^16.2.0",
@@ -38,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-plugin-react": "^7.22.0"
   }
 }

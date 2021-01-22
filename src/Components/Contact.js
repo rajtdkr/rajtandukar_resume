@@ -9,14 +9,30 @@ class Contact extends Component {
           contactEmail: "",
           contactMessage : "",
         };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
       }
-    handleInputChange(event) {
-        event.preventDefault();
-        const target = event.target;
-        const name = target.name;
-        const value = target.value;
-    this.setState({ [name]: value });
-      }
+
+  handleChange(event) {
+    this.setState({feedback: event.target.value})
+  }
+
+    handleSubmit (event) {
+	const templateId = 'template_id';
+	this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email})
+  }
+  sendFeedback (templateId, variables) {
+	window.emailjs.send(
+  	'rajtdkr@gmail.com', templateId,
+  	variables
+  	).then(res => {
+    	console.log('Email successfully sent!')
+  	})
+  	// Handle errors here however you like, or use a React error boundary
+  	.catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+  }
+
 
 
   render() {
@@ -43,7 +59,7 @@ class Contact extends Component {
 
          <div className="row">
             <div className="twelve columns">
-               <form action="{this.sendMessage.bind(this)}" method="post" id="contactForm" name="contactForm" >
+               <form  classname="contactForm" >
 					<fieldset>
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
@@ -58,12 +74,11 @@ class Contact extends Component {
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"  onChange={this.handleChange}/>
                   </div>
 
                   <div>
-                     <button className="submit">Submit</button>
-
+                     <button value="Submit" onClick={this.handleSubmit}>Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />
                      </span>
