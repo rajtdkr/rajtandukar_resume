@@ -18,22 +18,17 @@ class Portfolio extends Component {
         };
       const mystyle_cards={width : 200,
         }
-
     if(this.props.data){
       var projects = this.props.data.projects.map(function(projects){
         var projectImage = 'images/portfolio/'+ projects.image;
-
         return <div style={{width : '500'}}>
-
-           <Card  style={mystyle} bordered={true}>
+        <Card  style={mystyle} bordered={true}>
         <div style={{width: '100%', overflow: 'hidden'}}>
                <h5>{projects.title}</h5>
                <a href={projects.url} title={projects.title} >
                    <div style={{width: '300px', float: 'left'}}>
                <img alt={projects.title} src={projectImage} style={mystyle_cards}/>
                    </div>
-
-
                    <div style={{marginLeft: '20px', textColor : '#ffffff'}}>
                        
                        <h6>{projects.description}</h6></div>

@@ -5,9 +5,7 @@ class Contact extends Component {
     constructor(props) {
         super(props);
     this.state = {
-          contactName: "",
-          contactEmail: "",
-          contactMessage : "",
+         feedback: '', name: 'Name', email: 'email@example.com'
         };
 
     this.handleChange = this.handleChange.bind(this);
@@ -29,34 +27,24 @@ class Contact extends Component {
   	).then(res => {
     	console.log('Email successfully sent!')
   	})
-  	// Handle errors here however you like, or use a React error boundary
   	.catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
   }
 
-
-
   render() {
-
     if(this.props.data){
       var message = this.props.data.contactmessage;
     }
+
     return (
       <section id="contact">
-
          <div className="row section-head">
-
             <div className="two columns header-col">
-
                <h1><span>Get In Touch.</span></h1>
-
             </div>
-
             <div className="ten columns">
                   <p className="lead">{message}</p>
             </div>
-
          </div>
-
          <div className="row">
             <div className="twelve columns">
                <form  classname="contactForm" >
@@ -65,18 +53,14 @@ class Contact extends Component {
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
 						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
                   </div>
-
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
 						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
                   </div>
-
-
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
                      <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"  onChange={this.handleChange}/>
                   </div>
-
                   <div>
                      <button value="Submit" onClick={this.handleSubmit}>Submit</button>
                      <span id="image-loader">
@@ -86,15 +70,23 @@ class Contact extends Component {
 					</fieldset>
 				   </form>
 
-           <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
-           </div>
+                   <div id="message-warning"> Error boy</div>
+                           <div id="message-success">
+                          <i className="fa fa-check"></i>Your message was sent, thank you!<br />
+                           </div>
+                   </div>
       </div>
    </section>
     );
   }
+
+    handleChange(event) {
+    this.setState({feedback: event.target.value})
+  }
+
+  handleSubmit() {
+  }
 }
+
 
 export default Contact;
