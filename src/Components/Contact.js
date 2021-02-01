@@ -24,23 +24,23 @@ export default function ContactUs() {
 
         return (
 
-            <div   style={{paddingTop : '100px', paddingBottom : '80px'}} align={'center'}>
+            <div   style={{paddingTop : '10%', paddingBottom : '8%'}} align={'center'}>
                 <h1> <MailOutlined /> {'    '}A CONTACT MESSAGE</h1>
-                <form className="contactForm" onSubmit={sendEmail} style={{paddingTop : '50px', paddingBottom : '20px'}}>
+                <form className="contactForm" onSubmit={sendEmail} style={{paddingTop : '5%', paddingBottom : '2%'}}>
 
-                              <div style={{width: '1000px', overflow: 'hidden'}}>
-                                  <div style={{width: '50px', float: 'left'}}>
+                              <div style={{width: '50%', overflow: 'hidden'}}>
+                                  <div style={{width: '5%', float: 'left'}}>
                     <label style={{ color : '#ffffff'}}>Name*</label></div><div>
-                                  <input type="text" name="name" style={{width : '800px', color : '#000000'}}/></div></div>
+                                  <input type="text" name="name" style={{width : '80%', color : '#000000'}}/></div></div>
 
-                    <div style={{width: '1000px', overflow: 'hidden',paddingTop : '20px'}}>
-                                  <div style={{width: '50px', float: 'left'}}>
+                    <div style={{width: '50%', overflow: 'hidden',paddingTop : '2%'}}>
+                                  <div style={{width: '5%', float: 'left'}}>
                     <label style={{ color : '#ffffff'}}>Email*</label></div><div>
-                    <input type="email" name="email" style={{width : '800px' , color : '#000000'}}/></div></div>
-                    <div style={{width: '1000px', overflow: 'hidden',paddingTop : '20px'}}>
-                                  <div style={{width: '50px', float: 'left'}}>
-                    <label style={{ color : '#ffffff'}}>Message*</label></div><div>
-                    <textarea name="feedback" style={{width : '800px', color : '#000000', paddingBottom : '20px'}}/></div></div>
+                    <input type="email" name="email" style={{width : '80%' , color : '#000000'}}/></div></div>
+                    <div style={{width: '50%', overflow: 'hidden',paddingTop : '2%'}}>
+                                  <div style={{width: '5%', float: 'left'}}>
+                    <label style={{ color : '#ffffff' }}>Message*</label></div><div>
+                    <textarea name="feedback" style={{width : '80%', color : '#000000', paddingBottom : '2%'}}/></div></div>
                     <input  type="submit" value="Send" />
 
                 </form>
