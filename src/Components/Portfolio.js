@@ -8,7 +8,7 @@ class Portfolio extends Component {
 
   render() {
       const mystyle = {
-          minWidth: 1000,
+          Width: 500,
           padding:30,
           background: '#ffffff',
           textAlign : 'left'
@@ -23,7 +23,7 @@ class Portfolio extends Component {
       var projects = this.props.data.projects.map(function(projects){
         var projectImage = 'images/portfolio/'+ projects.image;
 
-        return <div style={{width : '500'}}>
+        return <div style={{width : '100%'}}>
 
            <Card  style={mystyle} bordered={true}>
         <div style={{width: '100%', overflow: 'hidden'}}>
@@ -46,7 +46,7 @@ class Portfolio extends Component {
     }
     return (
       <section id="portfolio">
-      <div className="row" style={{width : '2000px'}}>
+      <div className="row" style={{width : '100%'}}>
          <div className="twelve columns collapsed">
             <h1>Check Out Some of My Works.</h1>
             <div >
