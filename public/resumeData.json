@@ -127,14 +127,12 @@
         "title":"Virtual Book",
         "category":"Mobile Application",
         "image":"VB.png",
-        "url":"http://www.google.com",
         "description" : " Acquired first place developing “Virtual Book”, a Cross-Platform application with Unity coded in C# and  Vuforia database as back-end. The concept behind the development of this application is for users to get  a clear understanding of what writer is trying to imply. This application detects image of writer’s content  and plays a video above it. \n"
       },
       {
         "title":"Mr. Braniac",
         "category":"Mobile Quiz",
         "image":"Mr Braniac.jpg",
-        "url":"http://www.google.com",
         "description" : "Android Application developed for training and checking aptitude of a student, based on the current job  market. \n"
       }
     ]

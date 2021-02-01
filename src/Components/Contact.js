@@ -1,100 +1,50 @@
-import React, { Component } from 'react';
+import React from 'react';
+import emailjs from 'emailjs-com';
+import {
+  MailOutlined,
+  SettingFilled,
+  SmileOutlined,
+  SyncOutlined,
+  LoadingOutlined,
+} from '@ant-design/icons';
 
-class Contact extends Component {
 
-    constructor(props) {
-        super(props);
-    this.state = {
-          contactName: "",
-          contactEmail: "",
-          contactMessage : "",
-        };
+export default function ContactUs() {
+ function sendEmail(e) {
+    e.preventDefault();
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-      }
-
-  handleChange(event) {
-    this.setState({feedback: event.target.value})
+    emailjs.sendForm('service_3cytuye', 'template_w9yxpqt', e.target, 'user_O6cIVJD4XA6JetKZIz9HH')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset()
   }
 
-    handleSubmit (event) {
-	const templateId = 'template_id';
-	this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email})
-  }
-  sendFeedback (templateId, variables) {
-	window.emailjs.send(
-  	'rajtdkr@gmail.com', templateId,
-  	variables
-  	).then(res => {
-    	console.log('Email successfully sent!')
-  	})
-  	// Handle errors here however you like, or use a React error boundary
-  	.catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-  }
+        return (
 
+            <div   style={{paddingTop : '100px', paddingBottom : '80px'}} align={'center'}>
+                <h1> <MailOutlined /> {'    '}A CONTACT MESSAGE</h1>
+                <form className="contactForm" onSubmit={sendEmail} style={{paddingTop : '50px', paddingBottom : '20px'}}>
 
+                              <div style={{width: '1000px', overflow: 'hidden'}}>
+                                  <div style={{width: '50px', float: 'left'}}>
+                    <label style={{ color : '#ffffff'}}>Name*</label></div><div>
+                                  <input type="text" name="name" style={{width : '800px', color : '#000000'}}/></div></div>
 
-  render() {
+                    <div style={{width: '1000px', overflow: 'hidden',paddingTop : '20px'}}>
+                                  <div style={{width: '50px', float: 'left'}}>
+                    <label style={{ color : '#ffffff'}}>Email*</label></div><div>
+                    <input type="email" name="email" style={{width : '800px' , color : '#000000'}}/></div></div>
+                    <div style={{width: '1000px', overflow: 'hidden',paddingTop : '20px'}}>
+                                  <div style={{width: '50px', float: 'left'}}>
+                    <label style={{ color : '#ffffff'}}>Message*</label></div><div>
+                    <textarea name="feedback" style={{width : '800px', color : '#000000', paddingBottom : '20px'}}/></div></div>
+                    <input  type="submit" value="Send" />
 
-    if(this.props.data){
-      var message = this.props.data.contactmessage;
-    }
-    return (
-      <section id="contact">
-
-         <div className="row section-head">
-
-            <div className="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
+                </form>
             </div>
+        );
 
-            <div className="ten columns">
-                  <p className="lead">{message}</p>
-            </div>
-
-         </div>
-
-         <div className="row">
-            <div className="twelve columns">
-               <form  classname="contactForm" >
-					<fieldset>
-                  <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
-                  </div>
-
-
-                  <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"  onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-                     <button value="Submit" onClick={this.handleSubmit}>Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
-                  </div>
-					</fieldset>
-				   </form>
-
-           <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
-           </div>
-      </div>
-   </section>
-    );
-  }
 }
-
-export default Contact;
