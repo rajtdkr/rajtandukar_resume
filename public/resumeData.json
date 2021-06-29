@@ -57,9 +57,15 @@
     ],
     "work":[
       {
+        "company":"Lotterywest",
+        "title":"Analysis and Insights Support Officer",
+        "years":" Jun 2020 – Present",
+        "description":"Exploring large datasets to discover trends and patterns with the view of extracting relevant business insights, and Developing new reports as the need arises in partnership with the Data Analysts including data input, data compilation, data checking and elementary data visualisation"
+      },
+      {
         "company":"Laconik",
         "title":"Data Scientist ",
-        "years":" Feb 2020 – Present ",
+        "years":" Feb 2020 – May 2021 ",
         "description":"Building a model to determine the optimum rate of Potassium and Sulphur fertilizer which is used to maximize the crop yield considering various factors using historical yield.."
       },
       {
