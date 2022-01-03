@@ -10,7 +10,7 @@
     "email": "rajtdkr@gmail.com",
     "phone": "",
     "address":{
-      "street":"Light Street",
+      "street":"Wickails Court",
       "city":"Perth",
       "state":"WA",
       "zip": "6059"
@@ -58,7 +58,7 @@
     "work":[
       {
         "company":"Lotterywest",
-        "title":"Analysis and Insights Support Officer",
+        "title":"Data Analyst/ Engineer",
         "years":" Jun 2020 – Present",
         "description":"Exploring large datasets to discover trends and patterns with the view of extracting relevant business insights, and Developing new reports as the need arises in partnership with the Data Analysts including data input, data compilation, data checking and elementary data visualisation"
       },
@@ -115,6 +115,13 @@
   },
   "portfolio":{
     "projects": [
+       {
+        "title":"Rotaract Club of Himalaya Patan",
+        "category":"Website development",
+        "image":"RCHP LOGO.ico",
+        "url":"http://rotaryhimalayapatan.org.np/",
+        "description" : "Developed and deployed a website for the Rotary club of himalaya Patan. Rotary club of Himalaya Patan is a non profit organisation based on Kathmandu, Nepal. This website was developed as their representation portal and now is hosted and active."
+      },
       {
         "title":"Essay Marking Assistant",
         "category":"Natural Language Processing",
@@ -134,12 +141,6 @@
         "category":"Mobile Application",
         "image":"VB.png",
         "description" : " Acquired first place developing “Virtual Book”, a Cross-Platform application with Unity coded in C# and  Vuforia database as back-end. The concept behind the development of this application is for users to get  a clear understanding of what writer is trying to imply. This application detects image of writer’s content  and plays a video above it. \n"
-      },
-      {
-        "title":"Mr. Braniac",
-        "category":"Mobile Quiz",
-        "image":"Mr Braniac.jpg",
-        "description" : "Android Application developed for training and checking aptitude of a student, based on the current job  market. \n"
       }
     ]
   },
