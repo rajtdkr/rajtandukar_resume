@@ -1,8 +1,8 @@
 {
   "main": {
     "name":"Raj Tandukar",
-    "occupation":"Data Scientist",
-    "description":"and a recent graduate from University of Western Australia",
+    "occupation":"Data Specialist",
+    "description":"and a graduate from University of Western Australia",
     "image":"profilepic.jpg",
     "bio":"Using data to shape future decisions has always been a passion. I mainly work with Natural Language Processing and Image processing, however enjoy working with data in general. With a bit of background in software engineering, I always loved programming my ideas to real life.   I sometimes love to sing, and play my guitar :).",
 
@@ -10,10 +10,10 @@
     "email": "rajtdkr@gmail.com",
     "phone": "",
     "address":{
-      "street":"Wickails Court",
+      "street":"Wicca Street",
       "city":"Perth",
       "state":"WA",
-      "zip": "6059"
+      "zip": "6105"
     },
     "website": "http://www.rajtandukar.vercel.app",
     "resumedownload":"https://drive.google.com/file/d/1I2OFEGAwvKJ9C2eMHrQD6oLbpF1005pO/view?usp=sharing",
@@ -58,9 +58,15 @@
     "work":[
       {
         "company":"Data Divers",
-        "title":"Data Engineer",
-        "years":" Apr 2022 – Present",
-        "description":"Solving clients data problems."
+        "title":"Data Engineer/ Architect",
+        "years":"Aug 2022 – Present",
+        "description":"* Working with Power BI report builder to deliver inspection assessment paginated reports for huge number of stake holders.\n * Building Image compression pipelines using Databricks and Azure Data Factory.\n* Assessment of power BI report builder to understand its limitations for high scale report delivery.\n* Assessing Logic Apps for controlled delivery of massive sized Pdf's and Excel Reports."
+      },
+      {
+        "company":"Data Divers",
+        "title":"Data Specialist",
+        "years":" Apr 2022 – Aug 2022",
+        "description":"* Assisted on development of data environment using Synapse Microsoft Azure.\n*Productionizing current Synapse environment, Reverse engineering the production pipelines to establish Synapse Dev environment.\n* Data architecture and Synapse BAU monitoring & usage documentation.\n* R shiny and Azure Container service to build an interactive Maps dashboard \n* Used Power BI to upgrade current export dashboard.\n* Used Python for internal data tranformation and testing."
       },
       {
         "company":"Lotterywest",
@@ -121,6 +127,7 @@
   },
   "portfolio":{
     "projects": [
+
        {
         "title":"Rotaract Club of Himalaya Patan",
         "category":"Website development",
