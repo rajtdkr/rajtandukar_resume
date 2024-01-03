@@ -4,7 +4,7 @@
     "occupation":"Data Specialist",
     "description":"and a graduate from University of Western Australia",
     "image":"profilepic.jpg",
-    "bio":"Using data to shape future decisions has always been a passion. I mainly work with Natural Language Processing and Image processing, however enjoy working with data in general. With a bit of background in software engineering, I always loved programming my ideas to real life.   I sometimes love to sing, and play my guitar :).",
+    "bio":"I'm a data specialist with a keen interest in software engineering and a Masters degree in Data Science.My focus as a data specialist is to leverage my technical expertise to help businesses make informed decisions based on data-driven insights. I have a strong proficiency in programming languages such as Python, R, and SQL, and I am adept at using various tools and frameworks such as R Shiny, Power BI, and Apache Spark.\nAs a data specialist, I have the ability to collect, analyze, and interpret complex data sets and translate them into meaningful insights that help businesses optimize their operations and drive growth. I am highly detail-oriented and possess excellent problem-solving skills, which enable me to identify patterns, trends, and outliers in large data sets.\n\nMy ultimate goal is to continue to expand my knowledge and skills in data science and software engineering, and leverage my expertise to help businesses optimize their data management processes and drive growth through data-driven insight",
 
     "contactmessage":"A CONTACT MESSAGE",
     "email": "rajtdkr@gmail.com",
@@ -16,7 +16,7 @@
       "zip": "6105"
     },
     "website": "http://www.rajtandukar.vercel.app",
-    "resumedownload":"https://drive.google.com/file/d/1I2OFEGAwvKJ9C2eMHrQD6oLbpF1005pO/view?usp=sharing",
+    "resumedownload":"https://drive.google.com/file/d/1XoMSUFWZ6cvAV0lnoqRtRreL6Idf4fAK/view?usp=drive_link",
     "social":[
 
 
@@ -57,13 +57,25 @@
     ],
     "work":[
       {
-        "company":"Data Divers",
+        "company":"Data Divers @ MMG",
+        "title":"Data Engineer",
+        "years":"Aug 2023 – Nov 2023",
+        "description":"* Deployed Data Divers OWC framework (Infrastructure as a Code) to snip up a new Azure Data Platform.\n * Implemented CI/CD pipelines to promote environments for ADF and Data Warehouse."
+      },
+      {
+        "company":"Data Divers @ St John WA",
+        "title":"Data Engineer",
+        "years":"Aug 2023 – Nov 2023",
+        "description":"* Deployed Data Divers OWC framework (Infrastructure as a Code) to snip up a new Azure Data Platform.\n * Implemented CI/CD pipelines to promote environments for ADF and Data Warehouse.\n* Migrated Over 14 Databases, above 220 tables and data models within a limited timeframe."
+      },
+      {
+        "company":"Data Divers @ Department of Finance",
         "title":"Data Engineer/ Architect",
-        "years":"Aug 2022 – Present",
+        "years":"Aug 2022 – Aug 2023",
         "description":"* Working with Power BI report builder to deliver inspection assessment paginated reports for huge number of stake holders.\n * Building Image compression pipelines using Databricks and Azure Data Factory.\n* Assessment of power BI report builder to understand its limitations for high scale report delivery.\n* Assessing Logic Apps for controlled delivery of massive sized Pdf's and Excel Reports."
       },
       {
-        "company":"Data Divers",
+        "company":"Data Divers @ Western Rock Lobster",
         "title":"Data Specialist",
         "years":" Apr 2022 – Aug 2022",
         "description":"* Assisted on development of data environment using Synapse Microsoft Azure.\n*Productionizing current Synapse environment, Reverse engineering the production pipelines to establish Synapse Dev environment.\n* Data architecture and Synapse BAU monitoring & usage documentation.\n* R shiny and Azure Container service to build an interactive Maps dashboard \n* Used Power BI to upgrade current export dashboard.\n* Used Python for internal data tranformation and testing."
@@ -98,7 +110,6 @@
         "name":"Python",
         "level":"80%"
       },
-
       {
         "name":"SQL",
         "level":"80%"
@@ -112,16 +123,16 @@
         "level":"75%"
       },
       {
-        "name":"Cloud Computing",
-        "level":"60%"
+        "name":"Azure Cloud",
+        "level":"70%"
       },
       {
-        "name":"ReactJs",
+        "name":"Power BI",
+        "level":"70%"
+      },
+      {
+        "name":"Pyspark",
         "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"20%"
       }
     ]
   },
@@ -164,7 +175,7 @@
       },
       {
         "text":"Rotaract Club of Perth",
-        "user":"Vice President/ Secretary, Perth, WA / 2020"
+        "user":"President, Perth, WA / 2023"
       },
       {
         "text":"Uni-Mentor",
